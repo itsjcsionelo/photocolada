@@ -4,7 +4,6 @@
 @import url(../../../assets/icon/captain-icons/dist/captain-icons.css);
 @import url(../../../assets/icon/themify-icons/themify-icons.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
-
 *,
 *::before,
 *::after {
@@ -123,30 +122,24 @@ body {
   text-rendering: optimizeSpeed;
   -webkit-tap-highlight-color: transparent;
 }
-
 body ::-moz-selection {
-  background: #2ac782;
+  background: #faf290;
 }
-
 body ::selection {
-  background: #2ac782;
+  background: #faf290;
 }
-
 body img,
 body picture {
   max-width: 100%;
 }
-
-body ul[role=list],
-body ol[role=list] {
+body ul,
+body ol {
   list-style: none;
 }
-
 body blockquote,
 body q {
   quotes: none;
 }
-
 body blockquote:before,
 body blockquote:after,
 body q:before,
@@ -154,7 +147,6 @@ body q:after {
   content: "";
   content: none;
 }
-
 body table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -166,17 +158,16 @@ body table {
   }
 
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     -webkit-animation-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
 html {
   font-size: 62.5%;
 }
@@ -185,28 +176,23 @@ body {
   line-height: 2;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1.6rem, 2.5vmin, 1.8rem);
+  color: #454b54;
 }
-
 body h1 {
   font-size: clamp(2.8rem, 5vmin, 6rem);
 }
-
 body h2 {
   font-size: clamp(2.4rem, 4vmin, 5.2rem);
 }
-
 body h3 {
   font-size: clamp(1.92rem, 3.5vmin, 4.8rem);
 }
-
 body h4 {
   font-size: clamp(1.76rem, 3vmin, 4.4rem);
 }
-
 body h5 {
   font-size: clamp(1.6rem, 2.5vmin, 3.92rem);
 }
-
 body div,
 body button,
 body span,
@@ -289,8 +275,7 @@ body video {
   color: inherit;
   text-decoration: inherit;
 }
-
 body a:not([class]) {
   -webkit-text-decoration-skip: ink;
-  text-decoration-skip-ink: auto;
+          text-decoration-skip-ink: auto;
 }
