@@ -10,6 +10,11 @@ body {
 
         #logo {
             transform: scale(.6);
+
+            &::selection {
+                background-color: transparent;
+                color: inherit;
+            }
         }
     }
 
@@ -95,7 +100,7 @@ body {
                     grid-row: 2;
                     width: 90%;
                     margin: 0 auto;
-                    transform: scale(.8);
+                    transform: scale(.9);
                 }
 
                 @include large {
@@ -184,7 +189,7 @@ body {
 
                 &:hover {
                     font-weight: 600;
-                    color: c(secondary);
+                    color: c(primary);
                 }
             }
         }
@@ -192,8 +197,6 @@ body {
 
     main {
         grid-row: 5;
-        // display: grid;
-        // place-content: center;
         padding: 4rem;
 
         .gallery {
@@ -201,10 +204,15 @@ body {
             gap: 2rem;
             grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
 
+            @include large {
+                grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+                padding: 0 10%;
+            }
+
             &>* {
                 display: grid;
                 place-content: center;
-                height: 40vh;
+                height: 50vh;
                 border: solid .2rem black;
             }
         }
