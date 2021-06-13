@@ -116,7 +116,24 @@ body {
     text-rendering: optimizeSpeed;
 
     ::selection {
-        background: c(secondary)
+        background: c(secondary);
+        color: black;
+    }
+
+    a:active,
+    a:focus {
+        outline-style: none;
+        -moz-outline-style: none;
+    }
+
+    input:focus,
+    input:active,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: 0;
+        outline-width: 0;
+        -moz-appearance: none;
     }
 
     img,

@@ -124,9 +124,25 @@ body {
 }
 body ::-moz-selection {
   background: #faf290;
+  color: black;
 }
 body ::selection {
   background: #faf290;
+  color: black;
+}
+body a:active,
+body a:focus {
+  outline-style: none;
+  -moz-outline-style: none;
+}
+body input:focus,
+body input:active,
+body select:focus,
+body textarea:focus,
+body button:focus {
+  outline: 0;
+  outline-width: 0;
+  -moz-appearance: none;
 }
 body img,
 body picture {

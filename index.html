@@ -19,12 +19,27 @@
 <body>
 
     <header>
-        <h4><a id="logo" href="./index.html">PhotoColada</a></h4>
+        <a href="./index.html">
+            <img id="logo" src="./assets/img/favicon.png" alt="logo--icon">
+        </a>
+    </header>
+
+    <section class="hero">
+        <img alt="hero-img" class="hero__img">
+        <div class="hero__details">
+            <h1>PhotoColada</h1>
+            <h4>
+                <span>6,800,000+</span> images from thousands of<br>inspirational photographers
+            </h4>
+        </div>
+    </section>
+
+    <section class="search">
         <form class="search__form">
             <input type="text" name="search" class="search__form--input">
             <button type="submit" class="search__form--btn">Search</button>
         </form>
-    </header>
+    </section>
 
     <main>
         <div class="gallery"></div>
