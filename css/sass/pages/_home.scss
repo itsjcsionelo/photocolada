@@ -48,9 +48,14 @@ body {
             display: grid;
             place-content: center;
             text-align: center;
+            overflow: hidden;
 
             @include medium {
-                display: grid;
+                grid-template-columns: 30vw 40vw 30vw;
+                grid-template-rows: repeat(2, 8.5vh) 17vh;
+            }
+
+            @include extra-large {
                 grid-template-columns: 35vw 28vw 35vw;
                 grid-template-rows: repeat(2, 8.5vh) 17vh;
                 text-align: left;
@@ -64,6 +69,13 @@ body {
                 cursor: pointer;
 
                 @include medium {
+                    grid-row: 2;
+                    width: 90%;
+                    margin: auto;
+                    transform: scale(.8);
+                }
+
+                @include extra-large {
                     place-self: start;
                     margin-top: 5%;
                     margin-left: 10rem;
@@ -79,6 +91,20 @@ body {
                 font-weight: 500;
 
                 @include medium {
+                    grid-column: 3;
+                    grid-row: 2;
+                    width: 90%;
+                    margin: 0 auto;
+                    transform: scale(.8);
+                }
+
+                @include large {
+                    width: 80%;
+                    position: relative;
+                    bottom: 5%;
+                }
+
+                @include extra-large {
                     text-align: right;
                     grid-column: 1;
                     grid-row: 2;
@@ -114,8 +140,12 @@ body {
             border-radius: .6rem;
             height: 8vh;
 
+            @include medium {
+                width: 70vw;
+            }
+
             @include extra-large {
-                width: 35vw;
+                width: 45vw;
             }
 
             &--icon {
@@ -131,8 +161,12 @@ body {
                 padding-right: 1rem;
                 width: 50vw;
 
+                @include medium {
+                    width: 50vw;
+                }
+
                 @include extra-large {
-                    width: 20vw;
+                    width: 30vw;
                 }
 
                 &::placeholder {
