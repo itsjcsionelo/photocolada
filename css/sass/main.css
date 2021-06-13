@@ -346,6 +346,14 @@ body .hero__details {
   place-content: center;
   text-align: center;
 }
+@media (min-width: 768px) {
+  body .hero__details {
+    display: grid;
+    grid-template-columns: 35vw 28vw 35vw;
+    grid-template-rows: repeat(2, 8.5vh) 17vh;
+    text-align: left;
+  }
+}
 body .hero__details h1 {
   color: white;
   font-family: "Playfair Display", serif;
@@ -353,20 +361,38 @@ body .hero__details h1 {
   font-weight: 600;
   cursor: pointer;
 }
-body .hero__details h4 {
+@media (min-width: 768px) {
+  body .hero__details h1 {
+    place-self: start;
+    margin-top: 5%;
+    margin-left: 10rem;
+    transform: scale(1.5);
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+body .hero__details h5 {
   color: white;
   font-family: "Playfair Display", serif;
   font-weight: 500;
 }
-body .hero__details h4 span {
+@media (min-width: 768px) {
+  body .hero__details h5 {
+    text-align: right;
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 5%;
+  }
+}
+body .hero__details h5 span {
   font-family: "Poppins", sans-serif;
   color: #faf290;
 }
-body .hero__details h4 span::-moz-selection {
+body .hero__details h5 span::-moz-selection {
   background-color: transparent;
   color: inherit;
 }
-body .hero__details h4 span::selection {
+body .hero__details h5 span::selection {
   background-color: transparent;
   color: inherit;
 }

@@ -49,18 +49,41 @@ body {
             place-content: center;
             text-align: center;
 
+            @include medium {
+                display: grid;
+                grid-template-columns: 35vw 28vw 35vw;
+                grid-template-rows: repeat(2, 8.5vh) 17vh;
+                text-align: left;
+            }
+
             h1 {
                 color: white;
                 font-family: 'Playfair Display', serif;
                 font-style: italic;
                 font-weight: 600;
                 cursor: pointer;
+
+                @include medium {
+                    place-self: start;
+                    margin-top: 5%;
+                    margin-left: 10rem;
+                    transform: scale(1.5);
+                    grid-column: 3;
+                    grid-row: 2;
+                }
             }
 
-            h4 {
+            h5 {
                 color: white;
                 font-family: 'Playfair Display', serif;
                 font-weight: 500;
+
+                @include medium {
+                    text-align: right;
+                    grid-column: 1;
+                    grid-row: 2;
+                    margin-right: 5%;
+                }
 
                 span {
                     font-family: 'Poppins', sans-serif;
