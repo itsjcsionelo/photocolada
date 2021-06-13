@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(../../../assets/icon/captain-icons/dist/captain-icons.css);
+@import url(../../../assets/icon/themify-icons/themify-icons.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+button,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+img,
+picture,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body ::-moz-selection {
+  background: #2ac782;
+}
+
+body ::selection {
+  background: #2ac782;
+}
+
+body img,
+body picture {
+  max-width: 100%;
+}
+
+body ul[role=list],
+body ol[role=list] {
+  list-style: none;
+}
+
+body blockquote,
+body q {
+  quotes: none;
+}
+
+body blockquote:before,
+body blockquote:after,
+body q:before,
+body q:after {
+  content: "";
+  content: none;
+}
+
+body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 2;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.6rem, 2.5vmin, 1.8rem);
+}
+
+body h1 {
+  font-size: clamp(2.8rem, 5vmin, 6rem);
+}
+
+body h2 {
+  font-size: clamp(2.4rem, 4vmin, 5.2rem);
+}
+
+body h3 {
+  font-size: clamp(1.92rem, 3.5vmin, 4.8rem);
+}
+
+body h4 {
+  font-size: clamp(1.76rem, 3vmin, 4.4rem);
+}
+
+body h5 {
+  font-size: clamp(1.6rem, 2.5vmin, 3.92rem);
+}
+
+body div,
+body button,
+body span,
+body applet,
+body object,
+body iframe,
+body h6,
+body p,
+body blockquote,
+body pre,
+body a,
+body abbr,
+body acronym,
+body address,
+body big,
+body cite,
+body code,
+body del,
+body dfn,
+body em,
+body img,
+body ins,
+body kbd,
+body q,
+body s,
+body samp,
+body small,
+body strike,
+body strong,
+body sub,
+body sup,
+body tt,
+body var,
+body b,
+body u,
+body i,
+body center,
+body dl,
+body dt,
+body dd,
+body ol,
+body ul,
+body li,
+body fieldset,
+body form,
+body label,
+body legend,
+body table,
+body caption,
+body tbody,
+body tfoot,
+body thead,
+body tr,
+body th,
+body td,
+body article,
+body aside,
+body canvas,
+body details,
+body embed,
+body figure,
+body figcaption,
+body footer,
+body header,
+body hgroup,
+body menu,
+body nav,
+body output,
+body ruby,
+body section,
+body input,
+body textarea,
+body select,
+body summary,
+body time,
+body mark,
+body audio,
+body video {
+  font: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}

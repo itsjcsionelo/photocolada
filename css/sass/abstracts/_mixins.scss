@@ -1,0 +1,40 @@
+///////////////////////////////////////////////
+//MEDIA-QUERIES
+@mixin small {
+    @media (min-width: b(sm)) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: b(md)) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: b(lg)) {
+        @content;
+    }
+}
+
+@mixin extra-large {
+    @media (min-width: b(xl)) {
+        @content;
+    }
+}
+
+
+///////////////////////////////////////////////
+//UTILS
+@mixin fonts {
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+    @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+    @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+}
+
+@mixin icons {
+    @import url(../../../assets/icon/captain-icons/dist/captain-icons.css);
+    @import url(../../../assets/icon/themify-icons/themify-icons.css);
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+}

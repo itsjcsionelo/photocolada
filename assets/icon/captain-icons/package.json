@@ -1,0 +1,76 @@
+{
+  "_from": "captain-icons",
+  "_id": "captain-icons@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-oaSmEPKyA0TdyRoJRary+on4TDYMBTiqEetPkSKBP6SjjUgHGORcGTupUgZu6rssgAoRo9bLIjh41zJlhsFaTQ==",
+  "_location": "/captain-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "captain-icons",
+    "name": "captain-icons",
+    "escapedName": "captain-icons",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/captain-icons/-/captain-icons-0.2.0.tgz",
+  "_shasum": "82bbf213b37bfc868be58a096d46b866d8312077",
+  "_spec": "captain-icons",
+  "author": {
+    "name": "Rogério R. Alcântara",
+    "email": "rogerio.alcantara@gmail.com",
+    "url": "http://github.com/roalcantara"
+  },
+  "bugs": {
+    "url": "https://github.com/roalcantara/captain-icons/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "+350 Awesome FREE vector icons to empower your mobile and designs",
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "conventional-changelog-cli": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "husky": "^0.14.3",
+    "pug": "^2.0.3",
+    "sass-lint": "^1.12.1"
+  },
+  "homepage": "https://mariodelvalle.github.io/CaptainIconWeb",
+  "keywords": [
+    "icon",
+    "icons",
+    "web-font"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "main": "index.js",
+  "name": "captain-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roalcantara/captain-icons.git"
+  },
+  "scripts": {
+    "commitmsg": "commitlint -E GIT_PARAMS --config ./.commitlintrc.yml",
+    "lint": "yarn lint:saas",
+    "lint:saas": "sass-lint -c ./.sass-lint.yml --verbose --no-exit",
+    "release": "yarn release:tag && git push && git push --tags",
+    "release:tag": "git tag -a `echo v$(npm run version:current --silent)`",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "version:commit": "git commit -am \"chore(release): Bump version to $(npm run version:current --silent)\"",
+    "version:current": "echo $npm_package_version",
+    "version:major": "npm --no-git-tag-version version major && yarn version:commit",
+    "version:minor": "npm --no-git-tag-version version minor && yarn version:commit",
+    "version:patch": "npm --no-git-tag-version version patch && yarn version:commit"
+  },
+  "version": "0.2.0"
+}

@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////
+//COLORS
+@function c($name) {
+    @return map-get($colors, $name);
+}
+
+
+///////////////////////////////////////////////////
+//BREAKPOINTS
+@function b($point) {
+    @return map-get($breakpoints, $point);
+}
