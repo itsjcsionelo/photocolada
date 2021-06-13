@@ -21,7 +21,7 @@ body {
         grid-template-rows: 17vh 17vh;
 
         @include medium {
-            background: url('../../../assets/img/hero.svg');
+            background: url('../../../assets/img/bg.svg');
         }
 
         &__img {
@@ -29,15 +29,15 @@ body {
             grid-row: 1 / -1;
             background: url('../../../assets/img/hero.svg');
             background-repeat: no-repeat;
-            background-position: center bottom;
+            background-position: bottom;
             background-size: cover;
             filter: brightness(60%);
             min-height: 100%;
             color: transparent;
 
             @include medium {
-                filter: none;
                 background-size: auto;
+                filter: none;
             }
         }
 

@@ -318,7 +318,7 @@ body .hero {
 }
 @media (min-width: 768px) {
   body .hero {
-    background: url("../../../assets/img/hero.svg");
+    background: url("../../../assets/img/bg.svg");
   }
 }
 body .hero__img {
@@ -326,7 +326,7 @@ body .hero__img {
   grid-row: 1/-1;
   background: url("../../../assets/img/hero.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom;
   background-size: cover;
   filter: brightness(60%);
   min-height: 100%;
@@ -334,8 +334,8 @@ body .hero__img {
 }
 @media (min-width: 768px) {
   body .hero__img {
-    filter: none;
     background-size: auto;
+    filter: none;
   }
 }
 body .hero__details {
