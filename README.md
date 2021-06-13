@@ -1,4 +1,4 @@
-# Starter Files
+# PhotoColada
 
 #### This repository contains all the files I personally use for starting my project, consists:
 
