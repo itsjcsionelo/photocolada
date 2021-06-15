@@ -1,1 +1,13 @@
-//This file you will create your style for buttons inside of the project
+header {
+    display: grid;
+    place-content: center;
+
+    #logo {
+        transform: scale(.6);
+
+        &::selection {
+            background-color: transparent;
+            color: inherit;
+        }
+    }
+}

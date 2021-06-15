@@ -1,1 +1,6 @@
-//This file you will create your style for buttons inside of the project
+.search__form--btn {
+    background: none;
+    cursor: pointer;
+    transition: all .1s;
+    transform: scale(.9);
+}

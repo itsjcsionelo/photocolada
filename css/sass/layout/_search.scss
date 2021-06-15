@@ -1,0 +1,27 @@
+.search {
+    z-index: 1;
+
+    &__form {
+        background: white;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 .4rem .4rem c(tertiary);
+        border-radius: .6rem;
+        height: 8vh;
+
+        @include medium {
+            width: 70vw;
+        }
+
+        @include extra-large {
+            width: 45vw;
+        }
+
+        &--icon {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.search__form--input {
+    border: none;
+    border-right: solid .2rem c(tertiary);
+    padding-right: 1rem;
+    width: 50vw;
+
+    @include medium {
+        width: 50vw;
+    }
+
+    @include extra-large {
+        width: 30vw;
+    }
+}

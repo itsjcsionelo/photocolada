@@ -114,4 +114,65 @@ body {
     a:not([class]) {
         text-decoration-skip-ink: auto;
     }
+
+    .hero__img {
+        color: transparent;
+    }
+
+    .hero__details {
+        text-align: center;
+
+        @include extra-large {
+            text-align: left;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        h5 {
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+
+            @include extra-large {
+                text-align: right;
+            }
+
+            span {
+                font-family: 'Poppins', sans-serif;
+                color: c(secondary);
+
+                &::selection {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .search__form--icon {
+        font-weight: bold;
+        color: darken(c(tertiary), 30%);
+    }
+
+    .search__form--input {
+        color: black;
+
+        &::placeholder {
+            color: c(tertiary);
+        }
+    }
+
+    .search__form--btn {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+
+        &:hover {
+            font-weight: 600;
+            color: c(primary);
+        }
+    }
 }
