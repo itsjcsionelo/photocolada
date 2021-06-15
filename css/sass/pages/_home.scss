@@ -26,13 +26,17 @@ body {
         grid-template-rows: 17vh 17vh;
 
         @include medium {
-            background: url('../../../assets/img/bg.svg');
+            background:
+                url('../../../assets/img/bg.svg'),
+                url('../../../assets/img/2.jpg');
         }
 
         &__img {
             grid-column: 1 / -1;
             grid-row: 1 / -1;
-            background: url('../../../assets/img/hero.svg');
+            background:
+                url('../../../assets/img/hero.svg'),
+                url('../../../assets/img/1.jpg');
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: cover;
