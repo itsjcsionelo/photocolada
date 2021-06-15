@@ -24,6 +24,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 17vh 17vh;
+        transition: all .2s;
 
         @include medium {
             background:
@@ -43,6 +44,7 @@ body {
             filter: brightness(60%);
             min-height: 100%;
             color: transparent;
+            transition: all .2s;
 
             @include medium {
                 background-size: auto;
