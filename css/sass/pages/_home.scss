@@ -40,7 +40,14 @@ body {
                 transition: all .2s ease;
 
                 &:hover {
+                    border: solid .2rem black;
                     transform: translateY(-1rem);
+                    box-shadow: .6rem .6rem 1rem darken(c(tertiary), 60%);
+                }
+
+                &:active {
+                    transform: translateY(-1rem);
+                    box-shadow: .6rem .6rem 1rem darken(c(tertiary), 60%);
                 }
 
                 img {
@@ -99,9 +106,9 @@ body {
         }
 
         .missing {
-            display: flex;
+            display: none;
             justify-content: center;
-            transition: all .2s ease;
+            transition: all 1s ease;
             opacity: 0;
         }
 

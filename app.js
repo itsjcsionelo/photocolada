@@ -11,9 +11,8 @@ let searchVal
 
 //event listeners
 
-search.addEventListener('input', e => {
-    searchVal = e.target.value
-})
+search.addEventListener('input', e => searchVal = e.target.value)
+gallery.addEventListener("contextmenu", e => e.preventDefault())
 
 form.addEventListener('submit', e => {
     e.preventDefault()
@@ -51,13 +50,36 @@ async function generatePictures(data) {
 
             gallery.appendChild(galleryImg)
 
-            galleryImg.addEventListener('mouseover', () => {
-                const imgInfo = document.querySelector('.gallery__img--info')
-                imgInfo.style.background = 'black'
+            galleryImg.addEventListener('mouseenter', e => {
+                e.target.lastChild.style.transition = 'all .2s ease'
+                e.target.lastChild.style.background = 'black'
             })
+            galleryImg.addEventListener('mouseleave', e => {
+                e.target.lastChild.style.transition = 'all .2s ease'
+                e.target.lastChild.style.background = 'white'
+            })
+
+            galleryImg.addEventListener('touchstart', e => {
+                if (e.target.localName === 'img') {
+                    e.target.parentElement.style.border = 'solid .2rem black'
+                    e.target.parentElement.lastChild.style.transition = 'all .2s ease'
+                    e.target.parentElement.lastChild.style.background = 'black'
+                }
+            })
+            galleryImg.addEventListener('touchend', e => {
+                if (e.target.localName === 'img') {
+                    e.target.parentElement.style.border = 'solid .2rem white'
+                    e.target.parentElement.lastChild.style.transition = 'all .2s ease'
+                    e.target.parentElement.lastChild.style.background = 'white'
+                }
+            })
+
         })
     } catch (e) {
-        missing.style.opacity = '1'
+        missing.style.display = 'flex'
+        setTimeout(() => {
+            missing.style.opacity = '1'
+        }, 1500)
     }
 }
 

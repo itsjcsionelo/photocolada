@@ -398,7 +398,13 @@ body main .gallery > * {
   transition: all 0.2s ease;
 }
 body main .gallery > *:hover {
+  border: solid 0.2rem black;
   transform: translateY(-1rem);
+  box-shadow: 0.6rem 0.6rem 1rem #4d4d4d;
+}
+body main .gallery > *:active {
+  transform: translateY(-1rem);
+  box-shadow: 0.6rem 0.6rem 1rem #4d4d4d;
 }
 body main .gallery > * img {
   transition: all 0.2s;
@@ -445,9 +451,9 @@ body main .gallery > * .gallery__img--info a::after {
   right: -1rem;
 }
 body main .missing {
-  display: flex;
+  display: none;
   justify-content: center;
-  transition: all 0.2s ease;
+  transition: all 1s ease;
   opacity: 0;
 }
 
