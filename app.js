@@ -1,10 +1,13 @@
 const auth = '563492ad6f917000010000012d5323a91bae4df0b6bdc5933a958aae'
 const curatedData = 'https://api.pexels.com/v1/curated?per_page=15&page=1'
 
+const missing = document.querySelector('.missing')
+
 const gallery = document.querySelector('.gallery')
 const search = document.querySelector('.search__form--input')
 const form = document.querySelector('.search__form')
 let searchVal
+
 
 //event listeners
 
@@ -34,16 +37,28 @@ async function fetchApi(url) {
 }
 
 async function generatePictures(data) {
-    data.photos.forEach(photo => {
-        const galleryImg = document.createElement('div')
-        galleryImg.classList.add('.gallery__img')
-        galleryImg.innerHTML =
-            `<img src=${photo.src.portrait} />
-             <p>${photo.photographer}</p>
-             <a href=${photo.src.original}>Download</a>`
+    try {
+        data.photos.forEach(photo => {
+            const galleryImg = document.createElement('div')
+            galleryImg.classList.add('.gallery__img')
+            galleryImg.innerHTML =
+                `<img src=${photo.src.portrait} />
+                 <div class="gallery__img--info">
+                    <p>${photo.photographer}</p>
+                    <a href=${photo.src.original} target="_blank">
+                    Download</a>
+                 </div>`
 
-        gallery.appendChild(galleryImg)
-    })
+            gallery.appendChild(galleryImg)
+
+            galleryImg.addEventListener('mouseover', () => {
+                const imgInfo = document.querySelector('.gallery__img--info')
+                imgInfo.style.background = 'black'
+            })
+        })
+    } catch (e) {
+        missing.style.opacity = '1'
+    }
 }
 
 function clear() {

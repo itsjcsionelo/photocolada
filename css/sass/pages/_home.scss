@@ -32,12 +32,78 @@ body {
             }
 
             &>* {
-                display: grid;
-                place-content: center;
-                height: 50vh;
-                border: solid .2rem black;
+                border: solid .2rem white;
+                border-radius: .5rem;
+                box-shadow: .6rem .6rem 1rem darken(c(tertiary), 10%);
                 overflow: hidden;
+                position: relative;
+                transition: all .2s ease;
+
+                &:hover {
+                    transform: translateY(-1rem);
+                }
+
+                img {
+                    transition: all .2s;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+
+                    &:not(:hover) {
+                        transform: scale(1);
+                    }
+                }
+
+                .gallery__img--info {
+                    display: grid;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background: white;
+
+                    &>* {
+                        margin-left: -1rem;
+                    }
+
+                    p {
+                        color: c(primary-var);
+                        font-weight: 600;
+                        transform: translateY(.5rem) scale(.8);
+                        position: relative;
+
+                        &::after {
+                            font-family: "Font Awesome 5 Free";
+                            content: '\f1fa';
+                            color: c(tertiary);
+                            position: absolute;
+                            right: -1rem;
+                        }
+                    }
+
+                    a {
+                        transform: translateY(-.5rem) scale(.8);
+                        color: c(secondary-var);
+                        font-weight: 600;
+
+                        &::after {
+                            font-family: "Font Awesome 5 Free";
+                            content: '\f0ab';
+                            color: c(tertiary);
+                            position: absolute;
+                            right: -1rem;
+                        }
+                    }
+                }
             }
         }
+
+        .missing {
+            display: flex;
+            justify-content: center;
+            transition: all .2s ease;
+            opacity: 0;
+        }
+
     }
 }
