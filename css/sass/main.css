@@ -351,9 +351,9 @@ body .search__form--input::placeholder {
 body .search__form--btn {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  transition: all 0.2s;
 }
 body .search__form--btn:hover {
-  font-weight: 600;
   color: #6ec7b0;
 }
 
