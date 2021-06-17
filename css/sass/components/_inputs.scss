@@ -2,6 +2,7 @@
     border: none;
     border-right: solid .2rem c(tertiary);
     padding-right: 1rem;
+    text-transform: capitalize;
     width: 50vw;
 
     @include medium {
