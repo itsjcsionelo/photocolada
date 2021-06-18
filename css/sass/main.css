@@ -361,7 +361,7 @@ body .search__form--btn:hover {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8vh 30vh 4vh 4vh 1fr;
+  grid-template-rows: 6rem 30vh 2.5rem 2.5rem 1fr;
 }
 body header {
   grid-row: 1/2;
