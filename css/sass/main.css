@@ -479,23 +479,23 @@ header #logo::selection {
     background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
   }
 }
-.hero--img {
+.hero .hero--img {
   grid-column: 1/-1;
   grid-row: 1/-1;
-  background: url("../../../assets/img/hero.svg"), url("../../../assets/img/1.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(60%);
   min-height: 100%;
 }
 @media (min-width: 768px) {
-  .hero--img {
-    background-size: auto;
+  .hero .hero--img {
+    object-size: auto;
     filter: none;
   }
 }
-.hero--img::before {
+.hero .hero--img::before {
   display: none;
 }
 .hero__details {

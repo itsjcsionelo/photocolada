@@ -9,20 +9,18 @@
             url('../../../assets/img/2.jpg');
     }
 
-    &--img {
+    .hero--img {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
-        background:
-            url('../../../assets/img/hero.svg'),
-            url('../../../assets/img/1.jpg');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
+        // background: url('../../../assets/img/1.jpg');
+        // background-repeat: no-repeat;
+        object-position: bottom;
+        object-fit: cover;
         filter: brightness(60%);
         min-height: 100%;
 
         @include medium {
-            background-size: auto;
+            object-size: auto;
             filter: none;
         }
 
