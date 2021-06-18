@@ -9,6 +9,10 @@
             url('../../../assets/img/2.jpg');
     }
 
+    &::before {
+        display: none;
+    }
+
     // &__img {
     //     grid-column: 1 / -1;
     //     grid-row: 1 / -1;

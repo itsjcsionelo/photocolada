@@ -479,6 +479,9 @@ header #logo::selection {
     background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
   }
 }
+.hero::before {
+  display: none;
+}
 
 .search {
   z-index: 1;
