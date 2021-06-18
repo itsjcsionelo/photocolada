@@ -473,29 +473,28 @@ header #logo::selection {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 17vh 17vh;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .hero {
     background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
   }
 }
-.hero .hero--img {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  -o-object-position: bottom;
-     object-position: bottom;
+.hero--img {
+  align-self: end;
+  justify-self: center;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(60%);
   min-height: 100%;
 }
 @media (min-width: 768px) {
-  .hero .hero--img {
+  .hero--img {
     object-size: auto;
     filter: none;
   }
 }
-.hero .hero--img::before {
+.hero--img::before {
   display: none;
 }
 .hero__details {

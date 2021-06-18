@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 17vh 17vh;
+    overflow: hidden;
 
     @include medium {
         background:
@@ -9,12 +10,9 @@
             url('../../../assets/img/2.jpg');
     }
 
-    .hero--img {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
-        // background: url('../../../assets/img/1.jpg');
-        // background-repeat: no-repeat;
-        object-position: bottom;
+    &--img {
+        align-self: end;
+        justify-self: center;
         object-fit: cover;
         filter: brightness(60%);
         min-height: 100%;
