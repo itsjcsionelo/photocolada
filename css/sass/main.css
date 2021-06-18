@@ -479,7 +479,7 @@ header #logo::selection {
     background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
   }
 }
-.hero__img {
+.hero--img {
   grid-column: 1/-1;
   grid-row: 1/-1;
   background: url("../../../assets/img/hero.svg"), url("../../../assets/img/1.jpg");
@@ -490,12 +490,12 @@ header #logo::selection {
   min-height: 100%;
 }
 @media (min-width: 768px) {
-  .hero__img {
+  .hero--img {
     background-size: auto;
     filter: none;
   }
 }
-.hero__img::before {
+.hero--img::before {
   display: none;
 }
 .hero__details {
