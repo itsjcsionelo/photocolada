@@ -470,7 +470,7 @@ header #logo::selection {
 }
 
 .hero {
-  display: none;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 17vh 17vh;
 }
@@ -478,95 +478,6 @@ header #logo::selection {
   .hero {
     background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
   }
-}
-.hero__img {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  background: url("../../../assets/img/hero.svg"), url("../../../assets/img/1.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  filter: brightness(60%);
-  min-height: 100%;
-}
-@media (min-width: 768px) {
-  .hero__img {
-    background-size: auto;
-    filter: none;
-  }
-}
-.hero__img::before {
-  display: none;
-}
-.hero__details {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  z-index: 1;
-  display: grid;
-  place-content: center;
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .hero__details {
-    grid-template-columns: 30vw 40vw 30vw;
-    grid-template-rows: repeat(2, 8.5vh) 17vh;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__details {
-    grid-template-columns: 35vw 28vw 35vw;
-    grid-template-rows: repeat(2, 8.5vh) 17vh;
-  }
-}
-.hero__details h1 {
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  .hero__details h1 {
-    grid-row: 2;
-    width: 90%;
-    margin: auto;
-    transform: scale(0.8);
-  }
-}
-@media (min-width: 1200px) {
-  .hero__details h1 {
-    place-self: start;
-    margin-top: 5%;
-    margin-left: 10rem;
-    transform: scale(1.5);
-    grid-column: 3;
-    grid-row: 2;
-  }
-}
-@media (min-width: 768px) {
-  .hero__details h5 {
-    grid-column: 3;
-    grid-row: 2;
-    width: 90%;
-    margin: 0 auto;
-    transform: scale(0.9);
-  }
-}
-@media (min-width: 992px) {
-  .hero__details h5 {
-    width: 80%;
-    position: relative;
-    bottom: 5%;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__details h5 {
-    grid-column: 1;
-    grid-row: 2;
-    margin-right: 5%;
-  }
-}
-.hero__details h5 span::-moz-selection {
-  background-color: transparent;
-}
-.hero__details h5 span::selection {
-  background-color: transparent;
 }
 
 .search {

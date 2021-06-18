@@ -1,5 +1,5 @@
 .hero {
-    display: none;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 17vh 17vh;
 
@@ -9,94 +9,94 @@
             url('../../../assets/img/2.jpg');
     }
 
-    &__img {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
-        background:
-            url('../../../assets/img/hero.svg'),
-            url('../../../assets/img/1.jpg');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        filter: brightness(60%);
-        min-height: 100%;
+    // &__img {
+    //     grid-column: 1 / -1;
+    //     grid-row: 1 / -1;
+    //     background:
+    //         url('../../../assets/img/hero.svg'),
+    //         url('../../../assets/img/1.jpg');
+    //     background-repeat: no-repeat;
+    //     background-position: bottom;
+    //     background-size: cover;
+    //     filter: brightness(60%);
+    //     min-height: 100%;
 
-        @include medium {
-            background-size: auto;
-            filter: none;
-        }
+    //     @include medium {
+    //         background-size: auto;
+    //         filter: none;
+    //     }
 
-        &::before {
-            display: none;
-        }
-    }
+    //     &::before {
+    //         display: none;
+    //     }
+    // }
 
-    &__details {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
-        z-index: 1;
-        display: grid;
-        place-content: center;
-        overflow: hidden;
+    // &__details {
+    //     grid-column: 1 / -1;
+    //     grid-row: 1 / -1;
+    //     z-index: 1;
+    //     display: grid;
+    //     place-content: center;
+    //     overflow: hidden;
 
-        @include medium {
-            grid-template-columns: 30vw 40vw 30vw;
-            grid-template-rows: repeat(2, 8.5vh) 17vh;
-        }
+    //     @include medium {
+    //         grid-template-columns: 30vw 40vw 30vw;
+    //         grid-template-rows: repeat(2, 8.5vh) 17vh;
+    //     }
 
-        @include extra-large {
-            grid-template-columns: 35vw 28vw 35vw;
-            grid-template-rows: repeat(2, 8.5vh) 17vh;
-        }
+    //     @include extra-large {
+    //         grid-template-columns: 35vw 28vw 35vw;
+    //         grid-template-rows: repeat(2, 8.5vh) 17vh;
+    //     }
 
-        h1 {
-            cursor: pointer;
+    //     h1 {
+    //         cursor: pointer;
 
-            @include medium {
-                grid-row: 2;
-                width: 90%;
-                margin: auto;
-                transform: scale(.8);
-            }
+    //         @include medium {
+    //             grid-row: 2;
+    //             width: 90%;
+    //             margin: auto;
+    //             transform: scale(.8);
+    //         }
 
-            @include extra-large {
-                place-self: start;
-                margin-top: 5%;
-                margin-left: 10rem;
-                transform: scale(1.5);
-                grid-column: 3;
-                grid-row: 2;
-            }
-        }
+    //         @include extra-large {
+    //             place-self: start;
+    //             margin-top: 5%;
+    //             margin-left: 10rem;
+    //             transform: scale(1.5);
+    //             grid-column: 3;
+    //             grid-row: 2;
+    //         }
+    //     }
 
-        h5 {
+    //     h5 {
 
-            @include medium {
-                grid-column: 3;
-                grid-row: 2;
-                width: 90%;
-                margin: 0 auto;
-                transform: scale(.9);
-            }
+    //         @include medium {
+    //             grid-column: 3;
+    //             grid-row: 2;
+    //             width: 90%;
+    //             margin: 0 auto;
+    //             transform: scale(.9);
+    //         }
 
-            @include large {
-                width: 80%;
-                position: relative;
-                bottom: 5%;
-            }
+    //         @include large {
+    //             width: 80%;
+    //             position: relative;
+    //             bottom: 5%;
+    //         }
 
-            @include extra-large {
-                grid-column: 1;
-                grid-row: 2;
-                margin-right: 5%;
-            }
+    //         @include extra-large {
+    //             grid-column: 1;
+    //             grid-row: 2;
+    //             margin-right: 5%;
+    //         }
 
-            span {
+    //         span {
 
-                &::selection {
-                    background-color: transparent;
-                }
-            }
-        }
-    }
+    //             &::selection {
+    //                 background-color: transparent;
+    //             }
+    //         }
+    //     }
+    // }
 }
