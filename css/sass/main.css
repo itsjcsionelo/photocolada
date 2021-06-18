@@ -474,14 +474,6 @@ header #logo::selection {
   grid-template-columns: 1fr;
   grid-template-rows: 17vh 17vh;
 }
-@media (min-width: 768px) {
-  .hero {
-    background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
-  }
-}
-.hero::before {
-  display: none;
-}
 
 .search {
   z-index: 1;
