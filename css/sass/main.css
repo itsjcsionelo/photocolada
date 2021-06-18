@@ -469,10 +469,10 @@ header #logo::selection {
   color: inherit;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 17vh 17vh;
+@media (min-width: 768px) {
+  .hero {
+    background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
+  }
 }
 
 .search {
