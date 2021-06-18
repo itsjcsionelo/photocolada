@@ -1,13 +1,13 @@
 .hero {
-    display: none;
-    grid-template-columns: 1fr;
-    grid-template-rows: 17vh 17vh;
+    display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 17vh 17vh;
 
-    @include medium {
-        background:
-            url('../../../assets/img/bg.svg'),
-            url('../../../assets/img/2.jpg');
-    }
+    // @include medium {
+    //     background:
+    //         url('../../../assets/img/bg.svg'),
+    //         url('../../../assets/img/2.jpg');
+    // }
 
     // &__img {
     //     grid-column: 1 / -1;
