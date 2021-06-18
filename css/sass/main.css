@@ -361,7 +361,7 @@ body .search__form--btn:hover {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 30vh 4vh 4vh 1fr;
+  grid-template-rows: 8vh 30vh 4vh 4vh 1fr;
 }
 body header {
   grid-row: 1/2;
@@ -458,7 +458,7 @@ header {
   place-content: center;
 }
 header #logo {
-  transform: scale(0.6);
+  transform: scale(0.5);
 }
 header #logo::-moz-selection {
   background-color: transparent;
