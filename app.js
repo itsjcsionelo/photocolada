@@ -12,10 +12,12 @@ let searchVal
 //event listeners
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const bg = document.querySelector('.hero')
-    bg.onerror = () => this.style.display = 'none'
-    console.log(bg);
+document.addEventListener("DOMContentLoaded", function (event) {
+    document.querySelectorAll('img').forEach(function (img) {
+        img.onerror = function () {
+            this.style.display = 'none';
+        };
+    })
 });
 
 search.addEventListener('input', e => searchVal = e.target.value)
