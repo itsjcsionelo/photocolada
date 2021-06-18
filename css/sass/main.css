@@ -474,6 +474,11 @@ header #logo::selection {
   grid-template-columns: 1fr;
   grid-template-rows: 17vh 17vh;
 }
+@media (min-width: 768px) {
+  .hero {
+    background: url("../../../assets/img/bg.svg"), url("../../../assets/img/2.jpg");
+  }
+}
 .hero__img {
   grid-column: 1/-1;
   grid-row: 1/-1;
@@ -489,6 +494,9 @@ header #logo::selection {
     background-size: auto;
     filter: none;
   }
+}
+.hero__img::before {
+  display: none;
 }
 .hero__details {
   grid-column: 1/-1;

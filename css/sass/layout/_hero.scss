@@ -4,9 +4,9 @@
     grid-template-rows: 17vh 17vh;
 
     @include medium {
-        // background:
-        //     url('../../../assets/img/bg.svg'),
-        //     url('../../../assets/img/2.jpg');
+        background:
+            url('../../../assets/img/bg.svg'),
+            url('../../../assets/img/2.jpg');
     }
 
     &__img {
@@ -24,6 +24,10 @@
         @include medium {
             background-size: auto;
             filter: none;
+        }
+
+        &::before {
+            display: none;
         }
     }
 
