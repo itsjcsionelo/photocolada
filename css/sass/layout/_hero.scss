@@ -1,7 +1,7 @@
 .hero {
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 17vh 17vh;
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 17vh 17vh;
 
     @include medium {
         background:
