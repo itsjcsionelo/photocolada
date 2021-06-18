@@ -11,6 +11,13 @@ let searchVal
 
 //event listeners
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const bg = document.querySelector('.hero')
+    bg.onerror = () => this.style.display = 'none'
+    console.log(bg);
+});
+
 search.addEventListener('input', e => searchVal = e.target.value)
 gallery.addEventListener("contextmenu", e => e.preventDefault())
 
@@ -57,21 +64,6 @@ async function generatePictures(data) {
             galleryImg.addEventListener('mouseleave', e => {
                 e.target.lastChild.style.transition = 'all .2s ease'
                 e.target.lastChild.style.background = 'white'
-            })
-
-            galleryImg.addEventListener('touchstart', e => {
-                if (e.target.localName === 'img') {
-                    e.target.parentElement.style.border = 'solid .2rem black'
-                    e.target.parentElement.lastChild.style.transition = 'all .2s ease'
-                    e.target.parentElement.lastChild.style.background = 'black'
-                }
-            })
-            galleryImg.addEventListener('touchend', e => {
-                if (e.target.localName === 'img') {
-                    e.target.parentElement.style.border = 'solid .2rem white'
-                    e.target.parentElement.lastChild.style.transition = 'all .2s ease'
-                    e.target.parentElement.lastChild.style.background = 'white'
-                }
             })
 
         })

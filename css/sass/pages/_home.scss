@@ -45,11 +45,6 @@ body {
                     box-shadow: .6rem .6rem 1rem darken(c(tertiary), 60%);
                 }
 
-                &:active {
-                    transform: translateY(-1rem);
-                    box-shadow: .6rem .6rem 1rem darken(c(tertiary), 60%);
-                }
-
                 img {
                     transition: all .2s;
 
