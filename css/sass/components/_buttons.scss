@@ -24,8 +24,8 @@
 #arrow {
     transition: all .2s;
     cursor: pointer;
-    z-index: 1;
     position: relative;
+    z-index: 1;
 
     @include extra-large {
         position: relative;

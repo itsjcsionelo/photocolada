@@ -765,6 +765,13 @@ header #logo--name {
   background: #6ec7b0;
   border-radius: 50%;
 }
+@media (min-width: 1200px) {
+  .floating #progress .profile-main-loader {
+    top: -2.1rem;
+    padding: 0.4rem;
+    border: solid 0.2rem #6ec7b0;
+  }
+}
 .floating #progress .profile-main-loader .loader {
   position: relative;
   width: 5rem;
@@ -835,8 +842,8 @@ header #logo--name {
 #arrow {
   transition: all 0.2s;
   cursor: pointer;
-  z-index: 1;
   position: relative;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   #arrow {

@@ -42,6 +42,12 @@
             top: 0;
             background: c(primary);
             border-radius: 50%;
+
+            @include extra-large {
+                top: -2.1rem;
+                padding: .4rem;
+                border: solid .2rem c(primary);
+            }
         }
 
         .profile-main-loader .loader {

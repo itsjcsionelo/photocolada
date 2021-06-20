@@ -83,7 +83,7 @@ async function generatePictures(data) {
             const galleryImg = document.createElement('div')
             galleryImg.classList.add('.gallery__img')
             galleryImg.style.transition = 'all .2s'
-            setTimeout(() => galleryImg.style.opacity = '1', 500)
+            setTimeout(() => galleryImg.style.opacity = '1', 1000)
             galleryImg.innerHTML =
                 `<img src=${photo.src.portrait} />
                  <div class="gallery__img--info">
