@@ -357,6 +357,11 @@ body .search__form--btn {
 body .search__form--btn:hover {
   color: #6ec7b0;
 }
+body #logo--name {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #63b39e;
+}
 
 body {
   display: grid;
@@ -452,13 +457,25 @@ body main .missing {
   transition: all 1s ease;
   opacity: 0;
 }
+body .nav {
+  position: fixed;
+  bottom: 0;
+}
 
 header {
   display: grid;
   place-content: center;
+  position: fixed;
+  height: 6rem;
+  inset: 0;
+  z-index: 10;
+  box-shadow: 0 0.1rem 2rem #cdcdcd;
+  background: white;
 }
 header #logo {
+  transition: all 0.2s;
   transform: scale(0.5);
+  position: relative;
 }
 header #logo::-moz-selection {
   background-color: transparent;
@@ -467,6 +484,14 @@ header #logo::-moz-selection {
 header #logo::selection {
   background-color: transparent;
   color: inherit;
+}
+header #logo--name {
+  transition: all 0.2s;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
 }
 
 .hero {

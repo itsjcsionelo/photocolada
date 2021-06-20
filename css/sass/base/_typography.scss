@@ -175,4 +175,10 @@ body {
             color: c(primary);
         }
     }
+
+    #logo--name {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        color: c(primary-var);
+    }
 }

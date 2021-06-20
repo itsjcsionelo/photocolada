@@ -9,6 +9,20 @@ const form = document.querySelector('.search__form')
 let searchVal
 
 
+const logo = document.querySelector('#logo')
+const logoName = document.querySelector('#logo--name')
+window.addEventListener("scroll", function () {
+    if (window.scrollY == 0) {
+        logoName.style.transform = 'scale(0)'
+        setTimeout(() => logo.style.opacity = '1', 100)
+
+    } else {
+        logo.style.opacity = '0'
+        logoName.style.transform = 'scale(1.2)'
+    }
+});
+
+
 //event listeners
 
 
