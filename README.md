@@ -1,6 +1,6 @@
 # PhotoColada
 
-#### This repository contains all the files I personally use for starting my project, consists:
+#### Lil website where you can download high-res stock photos, consists:
 
 <table style="width: 100%; border: 0">
  <tr>
@@ -16,7 +16,16 @@
     <td>✔ Modern CSS Reset</td>
  </tr>
  <tr>
-    <th colspan="2">✔ Icons</th>
+    <td>✔ BEM Methodology</td>
+    <td>✔ Pexels API</td>
+ </tr>
+ <tr>
+    <td>✔ Transitions/Animations</td>
+    <td>✔ SVGs</td>
+ </tr>
+ <tr>
+    <td>✔ Fully Responsive</td>
+    <td>✔ Clean Code</td>
  </tr>
 </table>
 
