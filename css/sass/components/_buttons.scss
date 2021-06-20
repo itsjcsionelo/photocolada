@@ -4,3 +4,31 @@
     transition: all .1s;
     transform: scale(.9);
 }
+
+.nav--btn {
+    cursor: pointer;
+    border-radius: .6rem;
+    width: 40vw;
+    background: c(secondary);
+    transition: all .2s;
+
+    &:hover {
+        background: black;
+    }
+
+    @include large {
+        width: 20vw;
+    }
+}
+
+#arrow {
+    transition: all .2s;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+
+    @include extra-large {
+        position: relative;
+        bottom: 2rem;
+    }
+}

@@ -3,10 +3,13 @@
 @import './abstracts/mixins';
 @import './base/reset';
 @import './base/typography';
+@import './base/animations';
 @import './pages/home';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/search';
+@import './layout/gallery';
+@import './layout/nav';
 @import './components/inputs';
 @import './components/buttons';
 

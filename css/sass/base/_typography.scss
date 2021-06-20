@@ -126,29 +126,18 @@ body {
             text-align: left;
         }
 
-        h1 {
+        h1,
+        h5 {
             color: white;
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-weight: 600;
         }
 
         h5 {
-            color: white;
-            font-family: 'Playfair Display', serif;
-            font-weight: 500;
-
             @include extra-large {
                 text-align: right;
             }
 
-            span {
-                font-family: 'Poppins', sans-serif;
-                color: c(secondary);
-
-                &::selection {
-                    color: inherit;
-                }
+            span::selection {
+                color: inherit;
             }
         }
     }
@@ -160,25 +149,76 @@ body {
 
     .search__form--input {
         color: black;
+    }
 
-        &::placeholder {
-            color: c(tertiary);
+    .gallery__img--info {
+
+        p::after,
+        a::after {
+            font-family: "Font Awesome 5 Free";
+        }
+
+        a {
+            color: c(secondary-var);
         }
     }
 
-    .search__form--btn {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        transition: all .2s;
+    #arrow {
+        font-size: 5rem;
 
-        &:hover {
-            color: c(primary);
+        @include extra-large {
+            font-size: 6rem;
         }
     }
+}
 
-    #logo--name {
-        font-family: 'Playfair Display', serif;
-        font-style: italic;
-        color: c(primary-var);
-    }
+
+////////////////////////////////////////////////////
+// Combinations 
+
+.hero__details h1,
+.gallery__img--info p,
+.gallery__img--info a,
+.nav--btn {
+    font-weight: 600;
+}
+
+.hero__details h1,
+.hero__details h5,
+.nav--btn,
+#logo--name {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero__details h1,
+#logo--name {
+    font-style: italic;
+}
+
+h5,
+h5 span,
+.search__form--btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+h5 span,
+.nav--btn:hover {
+    color: c(secondary);
+}
+
+.search__form--input::placeholder,
+p::after,
+a::after {
+    color: c(tertiary);
+}
+
+.search__form--btn:hover,
+#arrow {
+    color: c(primary);
+}
+
+#logo--name,
+.gallery__img--info p {
+    color: c(primary-var);
 }
