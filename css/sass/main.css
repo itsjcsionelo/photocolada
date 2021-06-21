@@ -469,7 +469,7 @@ a::after {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 6rem 30vh 2.5rem 2.5rem 1fr;
+  grid-template-rows: 6rem 30vh 3.1rem 3.1rem 1fr;
 }
 body header {
   grid-row: 1/2;
@@ -630,7 +630,7 @@ header #logo--name {
   justify-content: space-evenly;
   box-shadow: 0 0.4rem 0.4rem #e6e6e6;
   border-radius: 0.6rem;
-  height: 8vh;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .search__form {

@@ -51,6 +51,14 @@ window.onscroll = () => {
 search.addEventListener('input', e => searchVal = e.target.value)
 gallery.addEventListener("contextmenu", e => e.preventDefault())
 
+search.addEventListener("keyup", (e) => {
+
+    if (e.keyCode === 13) {
+        e.preventDefault()
+        search.blur()
+    }
+})
+
 form.addEventListener('submit', e => {
     e.preventDefault()
 

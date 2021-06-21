@@ -10,7 +10,7 @@
         justify-content: space-evenly;
         box-shadow: 0 .4rem .4rem c(tertiary);
         border-radius: .6rem;
-        height: 8vh;
+        height: 100%;
 
         @include medium {
             width: 70vw;
